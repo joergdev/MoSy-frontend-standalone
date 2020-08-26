@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_3.xsd"
+	version="2.3">
+
+	<application>
+
+		<managed-bean>
+			<managed-bean-name>login</managed-bean-name>
+			<managed-bean-class>com.github.joergdev.mosy.frontend.view.LoginV</managed-bean-class>
+			<managed-bean-scope>session</managed-bean-scope>
+		</managed-bean>
+
+		<managed-bean>
+			<managed-bean-name>main</managed-bean-name>
+			<managed-bean-class>com.github.joergdev.mosy.frontend.view.MainV</managed-bean-class>
+			<managed-bean-scope>view</managed-bean-scope>
+		</managed-bean>
+
+		<managed-bean>
+			<managed-bean-name>_interface</managed-bean-name>
+			<managed-bean-class>com.github.joergdev.mosy.frontend.view.InterfaceV</managed-bean-class>
+			<managed-bean-scope>view</managed-bean-scope>
+		</managed-bean>
+
+		<managed-bean>
+			<managed-bean-name>recordAsMockdata</managed-bean-name>
+			<managed-bean-class>com.github.joergdev.mosy.frontend.view.RecordAsMockdataV</managed-bean-class>
+			<managed-bean-scope>view</managed-bean-scope>
+		</managed-bean>
+
+		<managed-bean>
+			<managed-bean-name>uploadMockdata</managed-bean-name>
+			<managed-bean-class>com.github.joergdev.mosy.frontend.view.UploadMockdataV</managed-bean-class>
+			<managed-bean-scope>view</managed-bean-scope>
+		</managed-bean>
+
+	</application>
+
+</faces-config>
