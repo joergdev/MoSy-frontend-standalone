@@ -6,7 +6,7 @@
 
 	<groupId>com.github.joergdev</groupId>
 	<artifactId>mosy-frontend-standalone</artifactId>
-	<version>1.0</version>
+	<version>2.0</version>
 	<packaging>jar</packaging>
 
 	<parent>
@@ -40,7 +40,7 @@
 		<dependency>
 			<groupId>com.github.joergdev</groupId>
 			<artifactId>mosy-frontend</artifactId>
-			<version>1.0</version>
+			<version>2.0</version>
 		</dependency>
 
 		<dependency>
