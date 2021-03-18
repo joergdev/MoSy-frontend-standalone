@@ -1,11 +1,11 @@
-package com.github.joergdev.mosy.frontend;
+package de.joergdev.mosy.frontend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
-import com.github.joergdev.mosy.frontend.utils.LoginFilter;
-import com.github.joergdev.mosy.frontend.utils.RoutingFilter;
+import de.joergdev.mosy.frontend.utils.LoginFilter;
+import de.joergdev.mosy.frontend.utils.RoutingFilter;
 
 @SpringBootApplication
 public class SpringPrimeFacesApplication
