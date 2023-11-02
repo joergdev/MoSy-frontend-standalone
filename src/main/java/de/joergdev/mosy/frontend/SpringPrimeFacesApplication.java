@@ -1,5 +1,6 @@
 package de.joergdev.mosy.frontend;
 
+import org.apache.log4j.Logger;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
@@ -10,9 +11,16 @@ import de.joergdev.mosy.frontend.utils.RoutingFilter;
 @SpringBootApplication
 public class SpringPrimeFacesApplication
 {
+  private static final Logger LOG = Logger.getLogger(SpringPrimeFacesApplication.class);
+
   public static void main(String[] args)
   {
+    long timeStart = System.currentTimeMillis();
+    LOG.info("Booting Application mosy-frontend");
+
     SpringApplication.run(SpringPrimeFacesApplication.class, args);
+
+    LOG.info("Booted application mosy-frontend in " + (System.currentTimeMillis() - timeStart) + " ms");
   }
 
   @Bean
