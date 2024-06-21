@@ -57,7 +57,7 @@
 			<groupId>io.github.classgraph</groupId>
 			<artifactId>classgraph</artifactId>
 			<!-- needs to be overwritten see https://github.com/classgraph/classgraph/issues/331 -->
-			<version>4.8.61</version>
+			<version>4.8.112</version>
 		</dependency>
 
 	</dependencies>
