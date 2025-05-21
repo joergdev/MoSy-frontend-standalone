@@ -1,6 +1,7 @@
 package de.joergdev.mosy.frontend;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
@@ -11,7 +12,7 @@ import de.joergdev.mosy.frontend.utils.RoutingFilter;
 @SpringBootApplication
 public class SpringPrimeFacesApplication
 {
-  private static final Logger LOG = Logger.getLogger(SpringPrimeFacesApplication.class);
+  private static final Logger LOG = LogManager.getLogger(SpringPrimeFacesApplication.class);
 
   public static void main(String[] args)
   {

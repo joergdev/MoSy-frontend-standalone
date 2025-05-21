@@ -6,7 +6,7 @@
 
 	<groupId>de.joergdev.mosy</groupId>
 	<artifactId>mosy-frontend-standalone</artifactId>
-	<version>5.0.1</version>
+	<version>5.1.0</version>
 	<packaging>jar</packaging>
 
 	<parent>
@@ -77,13 +77,19 @@
 		<dependency>
 			<groupId>de.joergdev.mosy</groupId>
 			<artifactId>mosy-frontend</artifactId>
-			<version>5.0.1</version>
+			<version>5.1.0</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.joinfaces</groupId>
 			<artifactId>primefaces-spring-boot-starter</artifactId>
 			<version>${joinfaces.version}</version>
+			<exclusions>
+		        <exclusion>
+		            <groupId>org.springframework.boot</groupId>
+		            <artifactId>spring-boot-starter-logging</artifactId>
+		        </exclusion>
+		    </exclusions>
 		</dependency>
 
 		<dependency>
